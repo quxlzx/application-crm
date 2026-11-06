@@ -1,0 +1,7 @@
+# personal data — never publish
+applications.db
+
+# environment
+.venv/
+__pycache__/
+*.pyc

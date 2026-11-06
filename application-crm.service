@@ -1,0 +1,12 @@
+[Unit]
+Description=Application CRM MCP (job application pipeline tracker, :8097)
+
+[Service]
+Type=simple
+ExecStart=%h/application-crm/.venv/bin/python %h/application-crm/server.py
+WorkingDirectory=%h/application-crm
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
